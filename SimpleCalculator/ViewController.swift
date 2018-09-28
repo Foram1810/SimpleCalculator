@@ -1,15 +1,13 @@
-//
-//  ViewController.swift
-//  SimpleCalculator
-//
-//  Created by newuser on 2018-09-26.
-//  Copyright © 2018 newuser. All rights reserved.
-//
+//  File Name: ViewController.swift
+//  App des: SimpleCalculator
+//  Created by ForumPatel on 2018-09-26.
+//  StudentId: 301042440
+// Version : 1.0
 
 import UIKit
 
 class ViewController: UIViewController {
-
+// create variables
     var numberOnScreen: Double = 0;
     var previousNumber: Double = 0;
     var operation: Int = 0;
@@ -33,8 +31,10 @@ class ViewController: UIViewController {
         
     }
     
+    //   Created label
     @IBOutlet weak var resultArea: UILabel!
     
+    // all Number buttons linked
     @IBAction func onNumberClk(_ sender: UIButton) {
         
         if performingMath == true {
@@ -69,7 +69,8 @@ class ViewController: UIViewController {
         }
         numberOnScreen = Double(resultArea.text!)!
     }
-        
+    
+    // calculations of arithmetic buttons
     @IBAction func buttons(_ sender: UIButton) {
         
         if resultArea.text != "" && sender.tag != 11 && sender.tag != 16{
@@ -113,9 +114,9 @@ class ViewController: UIViewController {
         else if sender.tag == 16 {
             
             if operation == 12{ //Divides
-                if numberOnScreen == 0 {
-                    resultArea.text = "In"
-                }
+               // if numberOnScreen == 0 {
+                //    resultArea.text = "In"
+               // }
                 resultArea.text = String(previousNumber / numberOnScreen)
                 
             }

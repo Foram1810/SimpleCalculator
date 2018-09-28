@@ -1,10 +1,8 @@
-//
-//  AppDelegate.swift
-//  SimpleCalculator
-//
-//  Created by newuser on 2018-09-26.
-//  Copyright © 2018 newuser. All rights reserved.
-//
+//  File Name: ViewController.swift
+//  App des: SimpleCalculator
+//  Created by ForumPatel on 2018-09-26.
+//  StudentId: 301042440
+// Version : 1.0
 
 import UIKit
 
